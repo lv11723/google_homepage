@@ -3,28 +3,35 @@ body {
     font-size: 14px;
 }
 
-ul {
+.top-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+.top-nav li {
     display: inline;
-    float: left;
 }
 
-a {
+.top-nav a {
     display: inline-block;
     padding: 10px;
     color: #222;
     text-decoration: none;
 }
 
-a:hover {
+.top-nav a:hover {
     text-decoration: underline;
 }
 
+#apps-icon {
+    height: 25px;
+    opacity: 0.75;
+}
+
+#profile-pic {
+    border-radius: 50%;
+}
 
 #logo {
     display: block;
@@ -37,13 +44,13 @@ a:hover {
 .search-bar {
     position: relative;
     display: flex;
-    border-color: blue;
 }
 
 .search-icon {
 position: absolute;
 height: 20px;
 width: 20px;
+opacity: 0.5;
 }
 
 .audio-search-icon {
@@ -54,4 +61,30 @@ width: 24px;
 
 .search-buttons {
     text-align: center;
+}
+
+.bottom-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+
+.bottom-nav li {
+    display: inline;
+}
+
+.bottom-nav a {
+    display: inline-block;
+    padding: 10px;
+    color: #70757a;
+    text-decoration: none;
+}
+
+.bottom-nav a:hover {
+    text-decoration: underline;
+}
+
+#leaf {
+    height: 14px;
 }
