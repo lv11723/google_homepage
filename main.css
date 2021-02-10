@@ -44,6 +44,7 @@ body {
 .search-bar {
     position: relative;
     display: flex;
+    border-radius: 24px;
 }
 
 .search-icon {
@@ -51,6 +52,17 @@ position: absolute;
 height: 20px;
 width: 20px;
 opacity: 0.5;
+}
+
+input[type="submit"] {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
 }
 
 .audio-search-icon {
