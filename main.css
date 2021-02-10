@@ -44,7 +44,14 @@ body {
 .search-bar {
     position: relative;
     display: flex;
-    border-radius: 24px;
+    border-radius: 200px;
+}
+
+.search-bar input {
+    height: 40px;
+    width: auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
 }
 
 .search-icon {
@@ -58,6 +65,10 @@ input[type="submit"] {
     background-color: #f8f9fa;
     border: none;
     border-radius: 4px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
 }
 
 input[type="submit"]:hover {
@@ -69,10 +80,6 @@ input[type="submit"]:hover {
 position: absolute;
 height: 24px;
 width: 24px;
-}
-
-.search-buttons {
-    text-align: center;
 }
 
 .bottom-nav ul {
