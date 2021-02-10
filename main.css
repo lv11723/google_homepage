@@ -1,27 +1,42 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-}
-
-.top-nav ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+.top-nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    margin: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.push {
+    margin-left: auto;
+}
+
 .top-nav li {
-    display: inline;
+    padding: 5px;
+    margin: 0 5px;
 }
 
 .top-nav a {
-    display: inline-block;
-    padding: 10px;
+    padding: 5px;
+    margin: 0 5px;
     color: #222;
     text-decoration: none;
 }
 
 .top-nav a:hover {
     text-decoration: underline;
+}
+
+#right-nav {
+    float: inline-start;
 }
 
 #apps-icon {
@@ -77,9 +92,10 @@ input[type="submit"]:hover {
 }
 
 .audio-search-icon {
-position: absolute;
-height: 24px;
-width: 24px;
+    float: right;
+    position: absolute;
+    height: 24px;
+    width: 24px;
 }
 
 .bottom-nav ul {
@@ -87,6 +103,8 @@ width: 24px;
     margin: 0;
     padding: 0;
     background: #f2f2f2;
+    align-items: center;
+    display: flex;
 }
 
 .bottom-nav li {
