@@ -102,24 +102,29 @@ ul {
 }
 
 input[type="text"] {
-    height: 42px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
-
+    height: 42px;
+    width: 578px;
+    margin-top: 26px;
 }
 
 #search-icon {
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     opacity: 0.5;
+    margin-top: 41px;
+    margin-left: 18px;
 }
 
 #audio-search-icon {
-    float: right;
     position: absolute;
-    height: 24px;
-    width: 24px;
+    height: 25px;
+    width: 25px;
+    margin-top: 36px;
+    margin-left: 542px;
+    
 }
 
 #search-buttons {
@@ -127,10 +132,13 @@ input[type="text"] {
     grid-row: 3/4;
     justify-self: center;
     align-self: end;
+    padding-bottom: 12px;
 }
 
 input[type="submit"] {
     background-color: #f8f9fa;
+    color: rgb(60, 64, 67);
+    font-size: 14px;
     border: none;
     border-radius: 4px;
     margin: 11px 4px;
@@ -145,7 +153,7 @@ input[type="submit"]:hover {
 }
 
 .bottom-nav-left {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(240, 240, 240);
     grid-column: 1/4;
     grid-row: 5/6;
     display: flex;
@@ -169,7 +177,7 @@ input[type="submit"]:hover {
 }
 
 .bottom-nav-right {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(240, 240, 240);
     grid-column: 4/6;
     grid-row: 5/6;
     display: flex;
