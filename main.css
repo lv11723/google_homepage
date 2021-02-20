@@ -1,42 +1,77 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+html {
+    height: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.top-nav ul {
-    background: red;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    padding: 6px;
+body {
+    height: 100%;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 290px 160px auto 47px;
 }
 
-.top-nav li {
-    padding: 5px;
-    margin: 0 5px;
+ul {
+    padding: 0;
+    margin-left: 15px;
 }
 
-.top-nav a {
-    padding: 5px;
-    margin: 0 5px;
+.top-nav-left {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+
+.top-nav-left li {
+    color: #222;
+    display: inline-block;
+    padding: 10px;
+}
+
+.top-nav-left a {
     color: #222;
     text-decoration: none;
 }
 
-.top-nav a:hover {
+.top-nav-left a:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.top-nav-right {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.top-nav-right li {
+    color: #222;
+    font-size: 13px;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.top-nav-right a {
+    color: #222;
+    text-decoration: none;
+}
+
+.top-nav-right a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 #apps-icon {
-    height: 25px;
+    height: 23px;
     opacity: 0.75;
 }
 
@@ -45,43 +80,53 @@ body {
 }
 
 .logo {
-    background: yellow;
-    display: flex;
-    min-height: 92px;
-    max-height: 290px;
+    height: 92px;
+    grid-column: 2/5;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: end;
+    margin: 0;
+    padding: 0;
 }
 
 #logo {
-    width: 272px;
     height: 92px;
+    width: 272px;
 }
 
-.main-search {
-    padding: 20px;
+#search-bar {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: start;
 }
 
-.search-bar {
-    background: pink;
-    border-radius: 200px;
-}
-
-.search-bar input {
-    height: 40px;
-    width: auto;
+input[type="text"] {
+    height: 42px;
     border: 1px solid #dfe1e5;
-    border-radius: 25px;
+    border-radius: 24px;
+
 }
 
-.search-icon {
+#search-icon {
     position: absolute;
     height: 20px;
     width: 20px;
     opacity: 0.5;
 }
 
-.search-buttons {
-    background: green;
-    display: flex;
+#audio-search-icon {
+    float: right;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+}
+
+#search-buttons {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: end;
 }
 
 input[type="submit"] {
@@ -99,35 +144,52 @@ input[type="submit"]:hover {
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
 }
 
-.audio-search-icon {
-    float: right;
-    position: absolute;
-    height: 24px;
-    width: 24px;
+.bottom-nav-left {
+    background-color: rgb(235, 235, 235);
+    grid-column: 1/4;
+    grid-row: 5/6;
+    display: flex;
+    align-items: center;
 }
 
-.bottom-nav ul {
-    background: #f2f2f2;
-    list-style-type: none;
-    height: 93px;
-    padding 0 20px;
-}
-
-.bottom-nav li {
-    display: inline;
-}
-
-.bottom-nav a {
+.bottom-nav-left li {
+    color: #222;
     display: inline-block;
     padding: 10px;
+}
+
+.bottom-nav-left a {
     color: #70757a;
     text-decoration: none;
 }
 
-.bottom-nav a:hover {
+.bottom-nav-left a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
-#leaf {
-    height: 14px;
+.bottom-nav-right {
+    background-color: rgb(235, 235, 235);
+    grid-column: 4/6;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.bottom-nav-right li {
+    color: #222;
+    display: inline-block;
+    padding: 10px;
+}
+
+.bottom-nav-right a {
+    color: #70757a;
+    text-decoration: none;
+}
+
+.bottom-nav-right a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
